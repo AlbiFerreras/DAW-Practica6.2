@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>DWEC05 Tarea - Ejercicio 1</title>
+        <meta charset="UTF-8">
+        <link href="./style/estilo.css" rel="stylesheet" type="text/css"/>
+        <script src="scripts/superheroe.js"></script>
+        <script src="scripts/ejercicio.js"></script>
+    </head>
+    <body>
+        <form id="formularioSuperheroe">
+			<h2>Albi Ferreras</h2>
+            <!-- Puedes cambiar el type de los input por lo que consideres mejor -->
+            <label for="codigo">Código: </label>
+            <input type="text" name="codigo" id="inCodigo"/>
+			<label for="superheroe">Super héroe: </label>
+            <input type="text" name="superheroe" id="inSuperheroe"/>
+            <label for="identidad_secreta">Identidad Secreta: </label>
+            <input type="text" name="identidad_secreta" id="inIdentidad_secreta"/>
+            <label for="superpoder">Superpoder: </label>
+            <input type="text" name="superpoder" id="inSuper_poder"/>
+            <label>Alineación: </label>
+            <select name="alineacion" id="inAlineacion">
+                <option selected value="none">Elige uno...</option>			
+				<option  value="Heroe">Héroe</option>
+				<option value="Villano">Villano</option>
+            </select>
+            <label for="fecha_aparicion">Fecha de aparición: </label>
+            <input type="date" name="fecha_aparicion" id="inFecha_aparicion"/>
+            <label for="victorias">Nº Victorias: </label>
+            <input type="number" name="victorias" id="inVictorias"/>
+            <label for="derrotas">Nº Derrotas: </label>
+            <input type="number" name="derrotas" id="inDerrotas"/>
+			<label for="activo">Activo: </label>
+            <input type="checkbox" name="activo" id="inActivo"/>
+            <label for="buscar"></label>
+			<input type="text" name="buscar" id="inBuscar"/>
+			<input type ="button" id="btnLimpiar" value="Limpiar Formulario"/>
+            <input type ="button" id="btnGuardar" value="Guardar Superheroe"/>
+			<input type ="button" id="btnBuscar" value="Buscar Superheroe"/>
+			<input type ="button" id="btnCargarTodos" value="Cargar todos"/>
+        </form>
+        <div id="salida"></div>
+    </body>
+</html>
+
